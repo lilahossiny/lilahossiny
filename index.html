@@ -15,7 +15,7 @@
 		<div class="color-display" ng-class="setClasses(color, null, true)">
 
 			<div class="color-ring-outer">
-				<div class="color-ring" ng-style="setRingRotation()">
+				<div class="color-ring" ng-style="setRingRotation()" tap="doIt()">
 					<div ng-repeat="c in shades track by $index" ng-style="setRotation($index)">
 						<div class="color-brick" tap="doIt(c)" ng-class="setClasses(c, color, false)" ng-style="{'backgroundColor': c}">
 						</div>
